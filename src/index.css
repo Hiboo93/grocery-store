@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 2px #1128015b;
+  } 
+  .primary-btn {
+    @apply border border-white px-4 py-2 rounded-lg;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

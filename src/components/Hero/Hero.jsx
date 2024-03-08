@@ -1,3 +1,5 @@
+import OrangeImg from "../../assets/orangebg.png"
+
 const Hero = () => {
   return (
     <main className="md:px-12 md:py-6 bg-primaryDark">
@@ -17,7 +19,9 @@ const Hero = () => {
             </div>
 
             {/* image section */}
-            
+            <div>
+              <img src={OrangeImg} alt="Not found" className="relative z-10 w-[400px] img-shadow" />
+            </div>
             {/* blank div section */}
           </div>
         </div>

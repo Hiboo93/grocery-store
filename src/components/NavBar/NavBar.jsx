@@ -15,7 +15,7 @@ const NavBar = ({ sideBar, handleSideBar }) => {
           <ul className=" lg:flex hidden space-x-4 text-xl">
             {NAVLINKS.map((link) => (
               <li key={link.label}>
-                <a href={link.href}>{link.label}</a>
+                <a className="hover:text-green-500" href={link.href}>{link.label}</a>
               </li>
             ))}
           </ul>

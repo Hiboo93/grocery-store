@@ -33,7 +33,7 @@ const Hero = () => {
             </div>
 
             {/* image section */}
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="700">
               <img src={OrangeImg} alt="Not found" className="relative z-10 w-[400px] img-shadow" />
             </div>
 

@@ -1,10 +1,12 @@
 import Hero from "./components/Hero/Hero.jsx";
+import Services from "./components/Services/Services.jsx";
 
 export default function App() {
   return (
-    <h1 className="overflow-x-hidden">
+    <main className="overflow-x-hidden">
       <Hero />
-    </h1>
+      <Services />
+    </main>
   )
 }
 

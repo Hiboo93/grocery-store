@@ -1,3 +1,4 @@
+import Worldmap from "../../assets/world-map.png"
 
 const WhereToBuy = () => {
   return (
@@ -13,7 +14,9 @@ const WhereToBuy = () => {
           <button className="primary-btn">Search</button>
         </div>
         {/* Map section */}
-        <div></div>
+        <div className="col-span-2">
+          <img src={Worldmap} alt="" className="w-full sm:w-[500px] mx-auto" />
+        </div>
       </div>
     </div>
   )

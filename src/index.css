@@ -20,6 +20,10 @@
   .primary-btn {
     @apply border border-white px-4 py-2 rounded-lg;
   }
+
+  .large-text {
+    @apply text-center text-[80px] sm:text-[120px] md:text-[150px] xl:text-[180px] text-white uppercase font-bold absolute bottom-0 w-full z-0 text-shadow
+  }
 }
 
 * {

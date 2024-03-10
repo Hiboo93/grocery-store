@@ -22,9 +22,17 @@ const Hero = () => {
             <div>
               <img src={OrangeImg} alt="Not found" className="relative z-10 w-[400px] img-shadow" />
             </div>
+
             {/* blank div section */}
+            <div className="md:hidden"></div>
           </div>
         </div>
+
+        {/* background large text */}
+        <h1 className="large-text">Orange</h1>
+
+        {/* sidebar section */}
+        
       </section>
     </main>
   );

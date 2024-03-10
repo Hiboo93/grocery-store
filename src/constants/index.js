@@ -7,6 +7,19 @@ export const NAVLINKS = [
   {href: "#", label: "Where to find"},
   {href: "#contact", label: "Contact"}
 ]
+export const FOOTERLINKS = [
+  {href: "#home", label: "Home"},
+  {href: "#about", label: "About us"},
+  {href: "#", label: "Contact"},
+  {href: "#", label: "Search Fruits"},
+]
+
+export const FOOTERLINKS2 = [
+  {href: "#service", label: "Services"},
+  {href: "#price", label: "Price"},
+  {href: "#youtube", label: "Youtube"},
+  {href: "#", label: "Privacy Policy"},
+]
 
 export const SERVICESDATA = [
   {

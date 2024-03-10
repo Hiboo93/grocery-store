@@ -29,7 +29,7 @@ const Hero = () => {
               <h1 className="text-5xl font-bold uppercase text-shadow">A Healthy Fruit</h1>
               <p className="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ad iste recusandae maxime modi.
               </p>
-              <button className="primary-btn">Shop Now</button>
+              <button className="secondary-btn">Shop Now</button>
             </div>
 
             {/* image section */}

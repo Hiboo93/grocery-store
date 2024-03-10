@@ -1,11 +1,24 @@
+import { useState } from "react";
 import OrangeImg from "../../assets/orangebg.png"
+import NavBar from "../NavBar/NavBar.jsx";
 
 const Hero = () => {
+  const [sideBar, setSideBar] = useState(false)
+
+  const handleSideBar = (sidebar) => {
+      if (!sideBar) {
+        setSideBar(true)
+      } else {
+        setSideBar(false)
+      }
+  }
+
   return (
     <main className="md:px-12 md:py-6 bg-primaryDark">
       <section className="relative min-h-[650px] bg-gradient-to-r from-primary to-secondary w-full md:rounded-xl shadow-md">
         <div className="container">
           {/* Navbar */}
+          <NavBar sideBar={sideBar} handleSideBar={handleSideBar} />
 
           {/* Hero section */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center min-h-[650px]">
@@ -32,7 +45,18 @@ const Hero = () => {
         <h1 className="large-text">Orange</h1>
 
         {/* sidebar section */}
-        
+        {
+          sideBar && (
+            <div className="absolute top-0 right-0 w-[120px] h-full bg-gradient-to-b from-primary to-secondary z-10">
+              <div className="w-full h-full flex justify-center items-center">
+                <div className="text-white flex flex-col justify-center items-center gap-6">
+                  {/* line */}
+                  
+                </div>
+              </div>
+            </div>
+          )
+        }
       </section>
     </main>
   );

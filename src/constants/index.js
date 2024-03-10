@@ -12,7 +12,7 @@ export const SERVICESDATA = [
   {
     id: 1,
     image: Fruits1,
-    title: "",
+    title: "Vitamin Fruits",
     subtitle: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     aosDelay: "300",
   },

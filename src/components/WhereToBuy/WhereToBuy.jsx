@@ -6,10 +6,17 @@ const WhereToBuy = () => {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 place-items-center">
         {/* text-content section */}
         <div className="space-y-8">
-          <h1 className="text-4xl font-bold text-dark font-serif">
+          <h1
+            data-aos="fade-up"
+            data-aos-delay="300"
+            className="text-4xl font-bold text-dark font-serif"
+          >
             Where to buy our products ?
           </h1>
-          <div className="flex items-center gap-4">
+          <div 
+            data-aos="fade-up"
+            data-aos-delay="500" 
+            className="flex items-center gap-4">
             <input
               type="text"
               placeholder="Country"
@@ -21,10 +28,15 @@ const WhereToBuy = () => {
               className="input-style w-full lg:w-[120px]"
             />
           </div>
-          <button className="primary-btn">Search</button>
+          <button 
+            data-aos="fade-up"
+            data-aos-delay="700" 
+            className="primary-btn">Search</button>
         </div>
         {/* Map section */}
-        <div className="col-span-2">
+        <div 
+            data-aos="fade"
+            className="col-span-2">
           <img src={Worldmap} alt="" className="w-full sm:w-[500px] mx-auto" />
         </div>
       </div>

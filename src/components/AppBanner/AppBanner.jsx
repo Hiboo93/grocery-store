@@ -30,17 +30,28 @@ const AppBanner = () => {
                 className="text-center sm:px-20"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus quos libero ratione voluptates esse vero ?
-                {" "}
+                Temporibus quos libero ratione voluptates esse vero ?{" "}
               </p>
 
               {/* images link */}
-              <div className="flex justify-center items-center gap-4">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="500"
+                className="flex justify-center items-center gap-4"
+              >
                 <a href="#">
-                  <img src={PlayStoreImg} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />
+                  <img
+                    src={PlayStoreImg}
+                    alt=""
+                    className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
+                  />
                 </a>
                 <a href="#">
-                  <img src={AppStoreImg} alt="" className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]" />
+                  <img
+                    src={AppStoreImg}
+                    alt=""
+                    className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
+                  />
                 </a>
               </div>
             </div>

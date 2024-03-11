@@ -1,6 +1,10 @@
-import { FaFacebookF, FaGoogle, FaInstagram, FaLinkedinIn } from "react-icons/fa"
-import { FOOTERLINKS, FOOTERLINKS2 } from "../../constants/index.js"
-
+import {
+  FaFacebookF,
+  FaGoogle,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
+import { FOOTERLINKS, FOOTERLINKS2 } from "../../constants/index.js";
 
 const Footer = () => {
   return (
@@ -10,7 +14,11 @@ const Footer = () => {
           {/* company details section */}
           <div className="space-y-6">
             <h1 className="text-4xl font-bold">Orange Mint</h1>
-            <p className="text-sm max-w-[300px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt mollitia itaque explicabo porro labore ab ad perspiciatis repudiandae a impedit.</p>
+            <p className="text-sm max-w-[300px]">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              mollitia itaque explicabo porro labore ab ad perspiciatis
+              repudiandae a impedit.
+            </p>
           </div>
 
           {/* NavLink section */}
@@ -19,27 +27,27 @@ const Footer = () => {
             <div className="grid grid-cols-2 gap-3">
               {/* first column links */}
               <div>
-              <ul className="space-y-2">
-                  {
-                    FOOTERLINKS.map((link) => (
-                      <li key={link.id}>
-                        <a href={link.href}>{link.label}</a>
-                      </li>
-                    ))
-                  }
+                <ul className="space-y-2">
+                  {FOOTERLINKS.map((link) => (
+                    <li key={link.id}>
+                      <a className="hover:text-green-400" href={link.href}>
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
 
               {/* second column links */}
               <div>
                 <ul className="space-y-2">
-                  {
-                    FOOTERLINKS2.map((link) => (
-                      <li key={link.id}>
-                        <a href={link.href}>{link.label}</a>
-                      </li>
-                    ))
-                  }
+                  {FOOTERLINKS2.map((link) => (
+                    <li key={link.id}>
+                      <a className="hover:text-green-400" href={link.href}>
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -53,16 +61,21 @@ const Footer = () => {
               <p>France 75001 Paris</p>
             </div>
             <div className="flex items-center gap-3">
-              <FaFacebookF className="text-3xl hover:scale-105 duration-300"/>
-              <FaInstagram className="text-3xl hover:scale-105 duration-300"/>
-              <FaLinkedinIn className="text-3xl hover:scale-105 duration-300"/>
-              <FaGoogle className="text-3xl hover:scale-105 duration-300"/>
+              <FaFacebookF className="text-3xl hover:scale-105 duration-300 hover:text-green-400" />
+              <FaInstagram className="text-3xl hover:scale-105 duration-300 hover:text-green-400" />
+              <FaLinkedinIn className="text-3xl hover:scale-105 duration-300 hover:text-green-400" />
+              <FaGoogle className="text-3xl hover:scale-105 duration-300 hover:text-green-400" />
             </div>
           </div>
         </div>
+        {/* copyright section */}
+        <p className="text-white text-center mt-8 pt-8 border-t-2">
+          {" "}
+          Copyright &copy; 2024 Company Name. All rights reserved
+        </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
